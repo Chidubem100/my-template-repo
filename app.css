@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#content{
+
+	background-color: blue;
+	/*margin:20px 20px; */
+	height: 34em;
+}
+h1{
+	text-align: center;
+	font-family: ui-sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	color: azure;
+}
+.para1{
+	cursor: pointer;
+	width: 27%;
+    height: 25em;
+    background: #EEF2F7;
+    color: black;
+    margin: 1.66%;
+    float: left;
+    border-radius: 2%;
+    padding:20px;
+    box-shadow: 0 0 10px black;
+}
+.para2{
+    
+	cursor: pointer;
+	width: 27%;
+    height: 25em;
+    margin: 1.66%;
+    background: #EEF2F7;
+    color: black;
+    border-radius: 2%;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    float: right;
+}
+.para3{
+	cursor: pointer;
+	width: 27%;
+    height: 25em;
+    background: #EEF2F7;
+    color: black;
+    border-radius: 2%;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+}
+.about{
+    
+	background-color: blue;
+	padding-top: 20px;
+	margin-top: 20px;
+	height: 10rem;
+}
+.avatar{
+	width: 10rem;
+	height: 8em;
+	margin: 10px;
+	border-radius: 50%;
+	position: absolute;
+}
+.cleo{
+	width: 40rem;
+	float: right;
+	color: white;
+	font-size: 20px;
+	font-family: maths; 
+}
+.lebe{
+	background-color: blue;
+	padding-top: 7px;
+	margin-top: 20px;
+	height: 23rem;
+}
+.club{
+	width: 22rem;
+    background: #fff;
+    float: left;
+    color: black;
+    margin: 20px 10px ;
+    border-radius: 6px;
+    padding: 10px 30px;
+}
+.oluchi{
+    width: 22rem;
+    background: #fff;
+    float: right;
+    color: black;
+    margin: 40px ;
+    border-radius: 6px;
+    padding: 10px 30px;
+}
+input{
+	display: block;
+    width: 20rem;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+button{
+    width: 5rem;
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+    background: blue;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+}
+h2{
+    text-align: center;
+    font-size: 34px;
+    color: blue;
+    margin-bottom: 10px;
+
+}
+footer{
+    background-color: white;
+    text-align: center; 
+    color: blue;
+    margin-top: 10px;
+    font-family: maths;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.goat{
+    background:url(../template/picx/pro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 25em;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    color:  blue;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    /*background-color: teal;*/
+    color: white;
+}
+.nav-links a{
+    /*color: rgb(7, 5, 5);*/
+    color:  white;
+}
+.logo{
+    font-size: 32px;
+    font-weight: bolder;
+    color:  white;
+}
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li{
+    padding: 5px 14px;
+}
+.menu li:hover{
+    background-color: blue;
+    border-radius:  10px;
+}
+input[type=checkbox]{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+.pen{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20%;
+}
+.check{
+    background-color: rgb(185, 130, 26);
+    font-size: 20px;
+    right: -44%;
+    width: 7em;
+    height: 40px;
+    position: relative;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 10px ;
+}
+
+
+
+
+@media only screen and (max-width:  768px){
+    #content{
+        position:   relative ;   
+        height: 73em;
+        width:  100%;
+        display: inline-block; 
+    }
+    .para1{
+        height:20em;
+        width:  70%;
+        margin-left: 48px; 
+    }
+    .about{
+        height: 10em;
+    }
+    .cleo{
+        width: 50%;
+        font-size:  17px;
+    }
+    .lebe{
+        height: 40em;
+        display:    inline-block;
+        }   
+    .club{
+        margin-left:    33px;
+    }
+    .oluchi{
+        margin-left:   3px;
+    }
+            
+        h1{
+        font-size:  25px;
+        font-weight:    bolder;
+        /*left:   2px; */
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: black;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li :hover{
+        display: inline-block;
+        background-color: blue;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+}

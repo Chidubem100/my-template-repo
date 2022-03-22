@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: cursive;
+    background-color: rgb(236, 170, 192);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    /*background-color: teal;*/
+    color: rgb(3, 1, 1);
+}
+.nav-links a{
+    color: rgb(7, 5, 5);
+}
+.logo{
+    font-size: 32px;
+    font-weight: bolder;
+
+}
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li{
+    padding: 5px 14px;
+}
+.menu li:hover{
+    background-color: rgb(243, 184, 74);
+}
+input[type=checkbox]{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+.pen{
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20%;
+}
+.check{
+    background-color: rgb(185, 130, 26);
+    font-size: 20px;
+    right: -44%;
+    width: 7em;
+    height: 40px;
+    position: relative;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 10px ;
+}
+.para{
+   background-color: white;
+   height: 35em;
+   background-size: cover;
+   /* width: 99%; */
+   margin-top: 100px; 
+   padding-left: 5px;
+
+}
+.para1{
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+}
+.isi{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+}
+.isi2{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    /* margin-top: 15px; */
+}
+.div1{
+    float: right;
+    height:7em;
+    width: 50%;
+    margin-top: 30px;
+    /* display: inline-block; */
+}
+.about{
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+}
+.uju{
+    height: 10em;
+    padding: 7px;
+}
+.img{
+    width: 20rem;
+	height: 20em;
+    display: inline-block;
+	margin: 10px;
+	border-radius: 10%;
+	position: absolute;
+}
+.fave{
+    color: cornsilk;
+    font-size: 14px;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 25px;
+}
+.anna{
+    background-color: black;
+    height: 10em;
+    color: blanchedalmond;
+    margin-top: 200px;
+    padding: 15px;
+}
+.third{
+    width: 25%;
+    /* height: 40%; */
+    display: inline-block;
+    font-size: 15px;
+}
+.second{
+    width: 25%;
+    display: inline-block;
+    font-size: 15px;
+    /* background-color: blue; */
+}
+.first{
+    width: 25%;
+    display: inline-block;
+    font-size: 15px;
+
+}
+.column{
+    float:left;
+    width: 30%;
+    margin-bottom: 16px;
+    margin-left: 35px;
+    padding: 0 8px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container{
+    padding: 0 16px;
+}
+.title{
+    color: grey;
+}
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.button:hover{
+    background-color: rgb(201, 94, 94);
+}
+@media (max-width: 768px){
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: wheat;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li :hover{
+        display: inline-block;
+        background-color: rgb(243, 184, 74);
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    .column{
+        width: 70%;
+        display: inline-block;
+        /* right: -50px; */
+        /* margin-right: 25px; */
+    }
+    .para{
+        height: 78em;
+        background-color: white;
+    }
+    .first,
+    .second,
+    .third {
+        width: 70%;
+    }
+    .anna{
+        height: 18em;
+        margin-top: 200px;
+        position: absolute;
+        display:inline-block;
+    }
+    .img{
+        width: 40%;
+        height: 40%;
+        margin-top: 90px;
+    }
+    .isi2{
+        font-size: 4px;
+    }    
+    .uju{
+        height: 15em;
+    }
+    .about{
+        height: 10px;
+        font-size: 14px;
+        /* margin-top: -20px; */
+    }
+    .pen{
+        font-size: 30px;
+    }
+    .check{
+        right: -160px;
+        margin-top: 30px;
+    }
+}
